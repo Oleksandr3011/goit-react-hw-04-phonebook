@@ -27,8 +27,10 @@ export const ContactForm = ({ onAddContact }) => {
     };
 
     const handleReset = () => {
-        console.log(Object.value(actions));
-        Object.values(actions).map(item => item(''));
+        setName('');
+        setNumber('');
+        // console.log(Object.value(actions));
+        // Object.values(actions).map(item => item(''));
     };
 
     const nameInputId = nanoid();
